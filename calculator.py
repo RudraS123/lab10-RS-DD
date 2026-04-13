@@ -1,20 +1,20 @@
+# https://github.com/RudraS123/lab10-RS-DD
+# Partner 1: William Albright
+# Partner 2: Adrian Moreno
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
 
 One function per operation, in order.
 """
-# https://github.com/RudraS123/lab10-RS-DD
 import math
 # First example
 def square_root(a):
-    try:
-        if a < 0:
-            raise ValueError
-        return math.sqrt(a)
-    except ValueError as e:
-        # Handle the error (e.g., return a message or log it)
-        return f"Error: {e}"
+    if a < 0:
+        raise ValueError
+    return math.sqrt(a)
+
     
 def hypotenuse(a, b):
     try:
